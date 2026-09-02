@@ -13,7 +13,7 @@ public class Requisito {
     // Métodos de comportamiento
     public void marcarComoEntregado() {
         this.fueEntregado = true;
-        System.out.println("El documento '" + nombreDocumento + "' ha sido recibido.");
+        System.out.println("\nEl documento [" + nombreDocumento + "] ha sido recibido.");
     }
     
     public boolean getFueEntregado() { return fueEntregado; }

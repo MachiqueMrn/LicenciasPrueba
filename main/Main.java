@@ -18,10 +18,15 @@ public class Main {
         boolean salir = false;
         int contadorFolios = 1001; // Para que el folio avance automáticamente
 
-        System.out.println("=== VENTANILLA DE TRÁMITES CIUDADANOS ===");
+        System.out.println("=".repeat(50));
+        System.out.println("    VENTANILLA DE TRÁMITES CIUDADANOS");
+        System.out.println("=".repeat(50));
 
         while (!salir) {
-            System.out.println("\n--- MENÚ PRINCIPAL ---");
+            System.out.println("\n");
+            System.out.println("=".repeat(50));
+            System.out.println("    MENÚ PRINCIPAL");
+            System.out.println("=".repeat(50));
             System.out.println("1. Registrar nuevo trámite de licencia");
             System.out.println("2. Consultar historial de trámites (Todas las solicitudes)");
             System.out.println("3. Salir del sistema");
@@ -31,7 +36,10 @@ public class Main {
             scanner.nextLine(); // Limpiar el buffer del teclado
 
             if (opcion == 1) {
-                System.out.println("\n--- A. Datos del Ciudadano ---");
+                System.out.println("\n");
+                System.out.println("=".repeat(50));
+                System.out.println("    A. Datos del Ciudadano");
+                System.out.println("=".repeat(50));
                 System.out.print("Nombre completo: ");
                 String nombre = scanner.nextLine();
                 System.out.print("CURP: ");
@@ -42,7 +50,10 @@ public class Main {
                 // Creamos al ciudadano
                 Ciudadano ciudadano = new Ciudadano(nombre, curp, telefono);
                 
-                System.out.println("\n--- B. Datos del Trámite ---");
+                System.out.println("\n");
+                System.out.println("=".repeat(50));
+                System.out.println("    B. Datos del Trámite");
+                System.out.println("=".repeat(50));
                 System.out.print("Tipo de licencia (Ej. Primera Vez / Renovación): ");
                 String tipoLicencia = scanner.nextLine();
                 
@@ -66,7 +77,10 @@ public class Main {
                 contadorFolios++; 
                 
             } else if (opcion == 2) {
-                System.out.println("\n--- HISTORIAL DE TRÁMITES REGISTRADOS ---");
+                System.out.println("\n");
+                System.out.println("=".repeat(50));
+                System.out.println("    HISTORIAL DE TRÁMITES REGISTRADOS");
+                System.out.println("=".repeat(50));
                 
                 // Verificamos si el archivero está vacío
                 if (listaSolicitudes.isEmpty()) {

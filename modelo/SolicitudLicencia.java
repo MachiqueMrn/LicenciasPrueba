@@ -29,7 +29,9 @@ public class SolicitudLicencia {
     }
 
     public void consultarEstado() {
-        System.out.println("--- Estado del Trámite ---");
+        System.out.println("=".repeat(50));
+        System.out.println("    Estado del Trámite");
+        System.out.println("=".repeat(50));
         titular.mostrarInformacion();
         System.out.println("Tipo de Licencia: " + tipoLicencia);
         System.out.println("Aprobada: " + (estaAprobada ? "Sí" : "No"));
